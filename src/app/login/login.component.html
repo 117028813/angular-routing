@@ -1,0 +1,7 @@
+<p>
+  login works!
+</p>
+<p>
+  <button (click)="login()" [disabled]="authService.isLoggedIn">Login</button>
+  <button (click)="logout()" [disabled]="!authService.isLoggedIn">Logout</button>
+</p>
